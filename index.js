@@ -63,6 +63,10 @@ function encaminar(pedido, respuesta, camino) {
 }
 
 function idiomaP(mensajeX) {
+
+  if (mensajeX === null) {
+    return "Mensaje es null";
+  }
   const vocal = ["a", "e", "i", "o", "u"];
   const mensaje = [];
 
@@ -74,9 +78,6 @@ function idiomaP(mensajeX) {
     if (vocal.includes(caracter)) {
       mensaje.push("p", caracter);
     }
-  }
-  if (mensajeX === null) {
-    return "Mensaje es null";
   }
   return mensaje.join("");
 }
