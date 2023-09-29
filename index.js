@@ -75,7 +75,9 @@ function idiomaP(mensajeX) {
       mensaje.push("p", caracter);
     }
   }
-
+  if (mensajeX === null) {
+    return "Mensaje es null";
+  }
   return mensaje.join("");
 }
 
